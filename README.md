@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<h1 align="center">Portfolio</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img alt="Badge indicando que o projeto foi criado em junho de 2023" src="https://img.shields.io/badge/Data%20de%20cria%C3%A7%C3%A3o-junho%2F2023-blue">
+    <img alt="Badge indicando que o status do projeto é 'em desenvolvimento'" src="https://img.shields.io/badge/Status-Developing-yellow">
+</p>
 
-## Available Scripts
+<p align="center">
+    • <a href="#Como acessar">Como acessar?</a>
+    • <a href="#descricao">Descrição</a>
+    • <a href="#funcionalidades">Funcionalidades</a>
+    • <a href="#tecnologias">Tecnologias</a>
+    • <a href="#Desenvolvedora">Desenvolvedora</a>
+</p>
 
-In the project directory, you can run:
+<h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
 
-### `yarn start`
+Confira e interaja com o projeto no <a href="">vercel</a>.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2 id="descricao">:pencil2: Descrição</h2>
+Front-end de um portfólio personalizado que exibe minha trajetória no mundo da programação.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 id="funcionalidades">:hammer: Funcionalidades</h2>
 
-### `yarn test`
+- Resposividade.
+- Listagem dos projetos de programação em seções distintas.
+- Consumo de API com Axios.
+- Listagem de habilidades e experiências profissionais a partir das informações na base de dados.
+- Reutilização de componentes da interface.
+- Manipulação de rotas com React Router DOM.
+- Criação de componentes estilizados com a biblioteca styled components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2 id="tecnologias">:computer: Tecnologias</h2>
 
-### `yarn build`
+- React
+- Typescript
+- Styled Components
+- React Router DOM
+- Context API
+- Axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2 id="Desenvolvedora">:woman: Desenvolvedora</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <a href="https://github.com/Danielle-Luz">
+    <img width="120px" src="https://avatars.githubusercontent.com/u/99164019?v=4" alt="foto de uma mulher parda com o cabelo castanho, sorrindo levemente na frente de um fundo verde com bits">
+  </a>
+</p>
+<p align="center">
+Danielle da Luz Nascimento
+</p>
+<p align="center">
+<a href="https://www.linkedin.com/in/danielle-da-luz-nascimento/">@Linkedin</a>
+</p>
