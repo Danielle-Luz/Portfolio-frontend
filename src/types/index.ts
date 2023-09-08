@@ -1,5 +1,5 @@
-type tHeaderLinkProps = {
+type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
 
-export { tHeaderLinkProps };
+export { tStyledHeaderLinkProps };

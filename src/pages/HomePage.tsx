@@ -1,5 +1,5 @@
-import { ProfileCard } from "../styles";
+import { StyledProfileCard } from "../styles";
 
 export const HomePage = () => {
-  return <ProfileCard />;
+  return <StyledProfileCard />;
 };

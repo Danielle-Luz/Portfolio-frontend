@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const ProfileCard = styled.article`
+export const StyledProfileCard = styled.article`
   background-color: ${({ theme }) => theme.colors.main.lowOpacity};
   border: 2px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
   border-radius: ${({ theme }) => theme.radius.small};

@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { HeaderLink, StyledHeader } from "../../styles";
+import { StyledHeaderLink, StyledHeader } from "../../styles";
 
 export const Header = () => {
   const actualLocation = useLocation();
@@ -15,9 +15,9 @@ export const Header = () => {
       {routesPaths.map(({ pathName, hyperlinkName }) => {
         const isAccessedRoute = actualLocation.pathname === pathName;
         return (
-          <HeaderLink to={pathName} isAccessedRoute={isAccessedRoute}>
+          <StyledHeaderLink to={pathName} isAccessedRoute={isAccessedRoute}>
             {hyperlinkName}
-          </HeaderLink>
+          </StyledHeaderLink>
         );
       })}
     </StyledHeader>
