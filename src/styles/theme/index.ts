@@ -3,7 +3,7 @@ const customTheme = {
   fontFamily: "Nunito, sans-serif",
   fontSizes: {
     small: "16px",
-    medium: "20px",
+    medium: "18px",
     large: "35px",
   },
   colors: {
