@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const ProfileCard = styled.article`
   background-color: ${({ theme }) => theme.colors.main.lowOpacity};
   border: 2px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
+  border-radius: ${({ theme }) => theme.radius.small};
   display: flex;
   justify-content: space-between;
   padding: 30px;
