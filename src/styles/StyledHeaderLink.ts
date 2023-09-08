@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
-import { tHeaderLinkProps } from "./../types";
+import { tStyledHeaderLinkProps } from "../interfaces";
 
-export const HeaderLink = styled(NavLink)<tHeaderLinkProps>`
+export const StyledHeaderLink = styled(NavLink)<tStyledHeaderLinkProps>`
   font-weight: 700;
   font-size: ${({ theme }) => theme.fontSizes.medium};
   padding: 5px 30px;

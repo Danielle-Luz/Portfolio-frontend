@@ -20,7 +20,8 @@ export const GlobalStyles = createGlobalStyle`
       ${({ theme }) => theme.colors.main.gradient[2]} 100%
     );
     margin: 0;
-    padding: 40px;
+    min-height: 100vh;
+    padding: 40px 150px;
   }
 
   button {
