@@ -4,9 +4,9 @@ const customTheme = {
   fontSizes: {
     small: "16px",
     medium: "20px",
-    large: "35px"
+    large: "35px",
   },
-  palette: {
+  colors: {
     grey: {
       gradient: ["#FFFFFF1A", "#FFFFFF00"],
       light: "#FFFFFF",

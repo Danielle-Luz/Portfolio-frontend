@@ -5,4 +5,9 @@ export const StyledHeader = styled.header`
   gap: 30px;
   justify-content: center;
   padding-block: 10px;
-`
+
+  a {
+    font-weight: 700;
+    font-size: ${({ theme }) => theme.fontSizes.medium};
+  }
+`;
