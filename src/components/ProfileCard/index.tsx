@@ -22,6 +22,26 @@ export const ProfileCard = () => {
       <article className="buttons-section">
         <StyledButton variant="faint">Projects</StyledButton>
         <StyledButton variant="faint">Currículo</StyledButton>
+        <div>
+          <a href="https://github.com/Danielle-Luz">
+            <img
+              src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/github.png"
+              alt="github"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/danielle-da-luz-nascimento/">
+            <img
+              src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+          <a href="mailto:daniln2209@gmail.com">
+            <img
+              src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/new-post.png"
+              alt="email"
+            />
+          </a>
+        </div>
       </article>
     </StyledProfileCard>
   );

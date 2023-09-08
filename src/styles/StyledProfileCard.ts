@@ -36,19 +36,20 @@ export const StyledProfileCard = styled.article`
   }
 
   .buttons-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 30px;
     max-width: 240px;
     width: 100%;
 
     div {
       display: flex;
-      gap: 32px;
+      gap: 25px;
     }
 
     img {
-      width: 50px;
+      width: 40px;
     }
   }
 `;

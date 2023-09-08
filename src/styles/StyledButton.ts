@@ -12,6 +12,7 @@ const variantsStyles = {
     font-weight: 700;
     padding: 10px;
     text-align: center;
+    width: 100%;
   `,
 };
 
