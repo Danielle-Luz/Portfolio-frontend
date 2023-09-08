@@ -1,4 +1,3 @@
-type tCustomTheme = typeof customTheme;
 const customTheme = {
   fontFamily: "Nunito, sans-serif",
   fontSizes: {
@@ -23,4 +22,4 @@ const customTheme = {
   },
 };
 
-export { customTheme, tCustomTheme };
+export { customTheme };
