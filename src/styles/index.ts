@@ -1,6 +1,7 @@
-export { StyledHeader } from "./StyledHeader";
-export { GlobalStyles } from "./GlobalStyles";
 export { customTheme } from "./theme";
-export { StyledHeaderLink } from "./StyledHeaderLink";
-export { StyledProfileCard } from "./StyledProfileCard";
+export { GlobalStyles } from "./GlobalStyles";
 export { StyledContainer } from "./StyledContainer";
+export { StyledHeader } from "./StyledHeader";
+export { StyledHeaderLink } from "./StyledHeaderLink";
+export { StyledButton } from "./StyledButton";
+export { StyledProfileCard } from "./StyledProfileCard";
