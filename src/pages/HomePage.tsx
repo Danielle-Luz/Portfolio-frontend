@@ -1,5 +1,5 @@
-import { StyledContainer, StyledProfileCard } from "../styles";
+import { ProfileCard } from "../components";
 
 export const HomePage = () => {
-  return <StyledProfileCard />;
+  return <ProfileCard />;
 };
