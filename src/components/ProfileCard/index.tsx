@@ -1,4 +1,4 @@
-import { StyledProfileCard } from "../../styles";
+import { StyledButton, StyledProfileCard } from "../../styles";
 import photo from "../../assets/imgs/danielle-photo.jpg";
 
 export const ProfileCard = () => {
@@ -18,6 +18,10 @@ export const ProfileCard = () => {
             aliquip ex ea commodo consequat.
           </p>
         </section>
+      </article>
+      <article className="buttons-section">
+        <StyledButton variant="faint">Projects</StyledButton>
+        <StyledButton variant="faint">Currículo</StyledButton>
       </article>
     </StyledProfileCard>
   );
