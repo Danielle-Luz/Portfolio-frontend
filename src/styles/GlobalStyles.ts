@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     );
     margin: 0;
     min-height: 100vh;
-    padding: 40px;
+    padding: 40px 150px;
   }
 
   button {

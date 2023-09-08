@@ -15,12 +15,13 @@ export const ProfileCard = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </section>
       </article>
       <article className="buttons-section">
-        <StyledButton variant="faint">Projects</StyledButton>
+        <StyledButton variant="faint">Artigos</StyledButton>
         <StyledButton variant="faint">Currículo</StyledButton>
         <div>
           <a href="https://github.com/Danielle-Luz">

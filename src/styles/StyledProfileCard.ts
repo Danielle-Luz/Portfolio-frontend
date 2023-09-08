@@ -39,7 +39,7 @@ export const StyledProfileCard = styled.article`
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
     max-width: 240px;
     width: 100%;
 
