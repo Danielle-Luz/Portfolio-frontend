@@ -16,7 +16,7 @@ export const StyledProfileCard = styled.article`
 
     img {
       border-radius: ${({ theme }) => theme.radius.round};
-      width: 250px;
+      width: 200px;
     }
   }
 

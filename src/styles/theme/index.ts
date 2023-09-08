@@ -4,7 +4,7 @@ const customTheme = {
   fontSizes: {
     small: "16px",
     medium: "18px",
-    large: "35px",
+    large: "30px",
   },
   colors: {
     grey: {
