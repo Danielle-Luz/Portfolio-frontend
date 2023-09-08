@@ -1,6 +1,6 @@
 type tCustomTheme = typeof customTheme;
 const customTheme = {
-  font: "Nunito, sans-serif",
+  fontFamily: "Nunito, sans-serif",
   palette: {
     grey: {
       gradient: ["#FFFFFF1A", "#FFFFFF00"],
