@@ -2,6 +2,21 @@ import { customTheme } from "../styles/theme";
 
 type tCustomTheme = typeof customTheme;
 
+type tKnowledgeLevel = "Iniciante" | "Intermediário" | "Avançado";
+
+type tStack = "Front-end" | "Back-end" | "Full-stack";
+
+type tProject = {
+  id: number;
+  name: string;
+  description: string;
+  stack: tStack;
+  coverImage: string;
+  url: string;
+  highlight: boolean;
+  technologies: tTechnology[];
+};
+
 type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
@@ -10,4 +25,19 @@ type tStyledButtonProps = {
   variant: "outline" | "faint";
 };
 
-export { tCustomTheme, tStyledHeaderLinkProps, tStyledButtonProps };
+type tTechnology = {
+  id: number;
+  name: string;
+  stack: tStack;
+  knowledgeLevel: tKnowledgeLevel;
+};
+
+export {
+  tCustomTheme,
+  tKnowledgeLevel,
+  tStack,
+  tProject,
+  tStyledHeaderLinkProps,
+  tStyledButtonProps,
+  tTechnology,
+};
