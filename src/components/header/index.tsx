@@ -1,13 +1,25 @@
-import { NavLink } from "react-router-dom";
-import { StyledHeader } from "../../styles";
+import { NavLink, useLocation } from "react-router-dom";
+import { HeaderLink, StyledHeader } from "../../styles";
 
 export const Header = () => {
+  const actualLocation = useLocation();
+  const routesPaths = [
+    { pathName: "/", hyperlinkName: "Home" },
+    { pathName: "/projects", hyperlinkName: "Projetos" },
+    { pathName: "/about", hyperlinkName: "Sobre mim" },
+    { pathName: "/contact", hyperlinkName: "Contato" },
+  ];
+
   return (
     <StyledHeader>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projetos</NavLink>
-      <NavLink to="/about">Sobre mim</NavLink>
-      <NavLink to="/contact">Contato</NavLink>
+      {routesPaths.map(({ pathName, hyperlinkName }) => {
+        const isAccessedRoute = actualLocation.pathname === pathName;
+        return (
+          <HeaderLink to={pathName} isAccessedRoute={isAccessedRoute}>
+            {hyperlinkName}
+          </HeaderLink>
+        );
+      })}
     </StyledHeader>
   );
 };
