@@ -14,6 +14,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body {
+    background: linear-gradient(243deg, 
+      ${({ theme }) => theme.colors.main.gradient[0]} 0%, 
+      ${({ theme }) => theme.colors.main.gradient[1]} 0.01%, 
+      ${({ theme }) => theme.colors.main.gradient[2]} 100%
+    );
     margin: 0;
     padding: 40px;
   }
