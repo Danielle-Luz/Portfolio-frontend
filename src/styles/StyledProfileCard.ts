@@ -43,6 +43,14 @@ export const StyledProfileCard = styled.article`
     max-width: 240px;
     width: 100%;
 
+    a {
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 70%;
+    }
+
     div {
       display: flex;
       gap: 25px;
