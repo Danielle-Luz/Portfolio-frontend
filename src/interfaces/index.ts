@@ -22,6 +22,10 @@ type tProjectProps = {
   projectStack: tStack;
 };
 
+type tProjectsSectionProps = {
+  projects: tProject[];
+};
+
 type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
@@ -43,6 +47,7 @@ export {
   tStack,
   tProject,
   tProjectProps,
+  tProjectsSectionProps,
   tStyledHeaderLinkProps,
   tStyledButtonProps,
   tTechnology,
