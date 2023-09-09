@@ -3,18 +3,21 @@ import { Header } from "./components";
 import { GlobalStyles, StyledContainer, customTheme } from "./styles";
 import { ThemeProvider } from "styled-components";
 import { RoutesContainer } from "./routes";
+import { MantineProvider } from "@mantine/core";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <ThemeProvider theme={customTheme}>
-          <GlobalStyles />
-          <StyledContainer>
-            <Header />
-            <RoutesContainer />
-          </StyledContainer>
-        </ThemeProvider>
+        <MantineProvider>
+          <ThemeProvider theme={customTheme}>
+            <GlobalStyles />
+            <StyledContainer>
+              <Header />
+              <RoutesContainer />
+            </StyledContainer>
+          </ThemeProvider>
+        </MantineProvider>
       </BrowserRouter>
     </>
   );

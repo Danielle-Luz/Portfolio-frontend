@@ -6,4 +6,5 @@ export const StyledHeader = styled.header`
   gap: 5px;
   justify-content: center;
   padding-block: 10px;
+  z-index: 1;
 `;

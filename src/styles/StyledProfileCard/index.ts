@@ -12,6 +12,7 @@ export const StyledProfileCard = styled.article`
   justify-content: space-between;
   padding: 30px;
   width: 100%;
+  z-index: 1;
 
   @media (${deviceSizes.laptop}) {
     flex-direction: row;

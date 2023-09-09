@@ -23,10 +23,26 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     min-height: 100vh;
     padding: 20px 5%;
+    position: relative;
     
     @media (min-width: ${deviceSizes.mobileMedium}) {
       padding-inline: 10%;
     }
+  }
+
+  body::after {
+    background-image: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.colors.grey.gradient[1]} 0%,
+      ${({ theme }) => theme.colors.main.gradient[0]} 80%
+    );
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    width: 30%;
   }
 
   button {

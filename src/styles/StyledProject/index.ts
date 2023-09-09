@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
+import { Carousel } from "@mantine/carousel";
 
-export const StyledProject = styled.li`
+export const StyledProject = styled(Carousel.Slide)`
   background: linear-gradient(
     249deg,
     ${({ theme }) => theme.colors.grey.gradient[0]} 1.39%,
@@ -9,10 +10,13 @@ export const StyledProject = styled.li`
   border: 2px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   justify-content: center;
-  max-width: 425px;
   gap: 25px;
   padding: 25px;
+  max-width: 425px;
+  min-width: 300px;
+  margin-right: 20px;
   width: 100%;
 
   h2 {
