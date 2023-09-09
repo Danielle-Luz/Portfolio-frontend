@@ -21,7 +21,11 @@ export const GlobalStyles = createGlobalStyle`
     );
     margin: 0;
     min-height: 100vh;
-    padding: 20px 150px;
+    padding: 20px 5%;
+    
+    @media (min-width: 410px) {
+      padding-inline: 10%;
+    }
   }
 
   button {
