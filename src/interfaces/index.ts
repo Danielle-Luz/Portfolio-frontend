@@ -30,7 +30,7 @@ type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
 
-type tStyledButtonProps = {
+type tStyledLinkButtonProps = {
   variant: "outline" | "faint";
 };
 
@@ -49,6 +49,6 @@ export {
   tProjectProps,
   tProjectsSectionProps,
   tStyledHeaderLinkProps,
-  tStyledButtonProps,
+  tStyledLinkButtonProps,
   tTechnology,
 };

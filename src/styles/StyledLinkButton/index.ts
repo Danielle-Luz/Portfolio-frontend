@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { tStyledButtonProps } from "../../interfaces";
+import { tStyledLinkButtonProps } from "../../interfaces";
 import { customTheme } from "../theme";
 
 const variantsStyles = {
@@ -26,9 +26,9 @@ const variantsStyles = {
   `,
 };
 
-export const StyledButton = styled.button<tStyledButtonProps>`
-  border-radius: ${({theme}) => theme.radius.small};
-  font-size: ${({theme}) => theme.fontSizes.small};
+export const StyledLinkButton = styled.a<tStyledLinkButtonProps>`
+  border-radius: ${({ theme }) => theme.radius.small};
+  font-size: ${({ theme }) => theme.fontSizes.small};
   transition: 0.2s;
   ${({ variant }) => variantsStyles[variant]}
 `;

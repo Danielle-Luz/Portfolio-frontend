@@ -3,7 +3,7 @@ export { GlobalStyles } from "./GlobalStyles";
 export { StyledContainer } from "./StyledContainer";
 export { StyledHeader } from "./StyledHeader";
 export { StyledHeaderLink } from "./StyledHeaderLink";
-export { StyledButton } from "./StyledButton";
+export { StyledLinkButton } from "./StyledLinkButton";
 export { StyledProject } from "./StyledProject";
 export { StyledProjectsSection } from "./StyledProjectsSection";
 export { StyledProfileCard } from "./StyledProfileCard";
