@@ -1,4 +1,4 @@
-import { tProject, tProjectProps, tStack } from "../../interfaces";
+import { tProjectProps } from "../../interfaces";
 import { StyledButton, StyledProject } from "../../styles";
 
 export const Project = ({ project, projectStack }: tProjectProps) => {
