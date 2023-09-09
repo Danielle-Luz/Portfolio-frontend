@@ -1,7 +1,7 @@
-import { tProject, tStack } from "../../interfaces";
+import { tProject, tProjectProps, tStack } from "../../interfaces";
 import { StyledButton, StyledProject } from "../../styles";
 
-export const Project = (project: tProject, projectStack: tStack) => {
+export const Project = ({project: tProject, projectStack: tStack}: tProjectProps) => {
   const isFrontend = projectStack === "Front-end";
 
   return (

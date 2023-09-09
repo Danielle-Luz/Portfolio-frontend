@@ -17,6 +17,11 @@ type tProject = {
   technologies: tTechnology[];
 };
 
+type tProjectProps = {
+  project: tProject;
+  projectStack: tStack;
+};
+
 type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
@@ -37,6 +42,7 @@ export {
   tKnowledgeLevel,
   tStack,
   tProject,
+  tProjectProps,
   tStyledHeaderLinkProps,
   tStyledButtonProps,
   tTechnology,
