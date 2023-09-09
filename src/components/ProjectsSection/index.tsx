@@ -10,9 +10,15 @@ export const ProjectsSection = ({
   return (
     <StyledProjectsSection>
       <h2>{sectionTitle}</h2>
-      {projects.map((project) => (
-        <Project key={project.id} project={project} projectStack={projectStack} />
-      ))}
+      <ul>
+        {projects.map((project) => (
+          <Project
+            key={project.id}
+            project={project}
+            projectStack={projectStack}
+          />
+        ))}
+      </ul>
     </StyledProjectsSection>
   );
 };
