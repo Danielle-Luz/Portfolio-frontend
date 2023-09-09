@@ -26,6 +26,10 @@ type tProjectsSectionProps = {
   sectionTitle: string;
 };
 
+type tStyledProjectProps = {
+  isBackend: boolean;
+};
+
 type tStyledHeaderLinkProps = {
   isAccessedRoute: boolean;
 };
@@ -39,6 +43,7 @@ type tTechnology = {
   name: string;
   stack: tStack;
   knowledgeLevel: tKnowledgeLevel;
+  iconUrl: string;
 };
 
 export {
@@ -48,6 +53,7 @@ export {
   tProject,
   tProjectProps,
   tProjectsSectionProps,
+  tStyledProjectProps,
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,
   tTechnology,

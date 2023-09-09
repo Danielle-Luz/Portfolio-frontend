@@ -1,7 +1,8 @@
 import { styled } from "styled-components";
 import { Carousel } from "@mantine/carousel";
+import { tStyledProjectProps } from "../../interfaces";
 
-export const StyledProject = styled(Carousel.Slide)`
+export const StyledProject = styled(Carousel.Slide)<tStyledProjectProps>`
   background: linear-gradient(
     249deg,
     ${({ theme }) => theme.colors.grey.gradient[0]} 1.39%,
@@ -45,7 +46,7 @@ export const StyledProject = styled(Carousel.Slide)`
     color: ${({ theme }) => theme.colors.grey.lowOpacity[0]};
     font-size: ${({ theme }) => theme.fontSizes.small};
     display: -webkit-box;
-    height: 60px;
+    height: 65px;
     overflow: hidden;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
