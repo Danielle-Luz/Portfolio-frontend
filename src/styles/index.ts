@@ -6,4 +6,5 @@ export { StyledHeaderLink } from "./StyledHeaderLink";
 export { StyledLinkButton } from "./StyledLinkButton";
 export { StyledProject } from "./StyledProject";
 export { StyledProjectsSection } from "./StyledProjectsSection";
+export { StyledTechnologies } from "./StyledTechnologies";
 export { StyledProfileCard } from "./StyledProfileCard";

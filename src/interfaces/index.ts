@@ -46,6 +46,10 @@ type tTechnology = {
   iconUrl: string;
 };
 
+type tTechnologiesProps = {
+  technologies: tTechnology[];
+};
+
 export {
   tCustomTheme,
   tKnowledgeLevel,
@@ -57,4 +61,5 @@ export {
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,
   tTechnology,
+  tTechnologiesProps,
 };
