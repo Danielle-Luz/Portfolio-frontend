@@ -5,6 +5,8 @@ import { customTheme } from "../theme";
 const variantsStyles = {
   outline: `
     border: 1px solid ${customTheme.colors.grey.light};
+    padding: 5px 15px;
+    width: fit-content;
 
     &:hover {
       background-color: ${customTheme.colors.grey.lowOpacity[2]};

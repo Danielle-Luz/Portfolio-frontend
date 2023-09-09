@@ -9,7 +9,7 @@ export const ProjectsSection = ({
 }: tProjectsSectionProps) => {
   return (
     <StyledProjectsSection>
-      <h2>{sectionTitle}</h2>
+      <h2 className="section-title">{sectionTitle}</h2>
       <ul>
         {projects.map((project) => (
           <Project
