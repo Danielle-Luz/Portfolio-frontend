@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { deviceSizes } from "../deviceSizes";
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -23,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     padding: 20px 5%;
     
-    @media (min-width: 410px) {
+    @media (min-width: ${deviceSizes.mobileMedium}) {
       padding-inline: 10%;
     }
   }
