@@ -14,7 +14,7 @@ export const StyledProject = styled(Carousel.Slide)<tStyledProjectProps>`
   flex-shrink: 0;
   justify-content: center;
   gap: 25px;
-  padding: 25px;
+  padding: 30px;
   max-width: 425px;
   min-width: 300px;
   margin-right: 20px;
@@ -36,7 +36,7 @@ export const StyledProject = styled(Carousel.Slide)<tStyledProjectProps>`
   }
 
   img {
-    height: 150px;
+    max-height: 150px;
     object-fit: cover;
     max-width: 370px;
     width: 100%;

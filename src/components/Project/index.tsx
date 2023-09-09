@@ -11,9 +11,6 @@ export const Project = ({ project }: tProjectProps) => {
         <h2>{project.name}</h2>
         <p>{project.description}</p>
       </section>
-      <StyledLinkButton variant="outline" href={project.url}>
-        Repositório
-      </StyledLinkButton>
     </StyledProject>
   );
 };
