@@ -11,7 +11,7 @@ export const StyledProject = styled.li`
   flex-direction: column;
   max-width: 425px;
   gap: 30px;
-  padding: 40px 25px;
+  padding: 30px 25px;
   width: 100%;
 
   h2 {
@@ -39,5 +39,10 @@ export const StyledProject = styled.li`
   p {
     color: ${({ theme }) => theme.colors.grey.lowOpacity[0]};
     font-size: ${({ theme }) => theme.fontSizes.small};
+    display: -webkit-box;
+    height: 60px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 `;
