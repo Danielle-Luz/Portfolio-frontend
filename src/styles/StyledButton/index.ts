@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import { tStyledButtonProps } from "../interfaces";
-import { customTheme } from "./theme";
+import { tStyledButtonProps } from "../../interfaces";
+import { customTheme } from "../theme";
 
 const variantsStyles = {
   outline: `

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
-import { tStyledHeaderLinkProps } from "../interfaces";
+import { tStyledHeaderLinkProps } from "../../interfaces";
 
 export const StyledHeaderLink = styled(NavLink)<tStyledHeaderLinkProps>`
   font-weight: 700;
