@@ -10,13 +10,13 @@ export const StyledProject = styled.li`
   display: flex;
   flex-direction: column;
   max-width: 425px;
-  gap: 30px;
-  padding: 30px 25px;
+  gap: 25px;
+  padding: 25px;
   width: 100%;
 
   h2 {
     font-size: ${({ theme }) => theme.fontSizes.medium};
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 265px;
     overflow: hidden;
     text-overflow: ellipsis;
