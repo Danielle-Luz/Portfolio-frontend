@@ -1,10 +1,18 @@
-import { tProject, tProjectsSectionProps } from "./../../interfaces";
+import { tProjectsSectionProps } from "./../../interfaces";
 import { Project } from "..";
+import { StyledProjectsSection } from "../../styles";
+
 export const ProjectsSection = ({
   projects,
   projectStack,
+  sectionTitle,
 }: tProjectsSectionProps) => {
-  return projects.map((project) => (
-    <Project project={project} projectStack={projectStack} />
-  ));
+  return (
+    <StyledProjectsSection>
+      <h2>{sectionTitle}</h2>
+      {projects.map((project) => (
+        <Project project={project} projectStack={projectStack} />
+      ))}
+    </StyledProjectsSection>
+  );
 };

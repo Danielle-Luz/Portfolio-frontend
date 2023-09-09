@@ -25,6 +25,7 @@ type tProjectProps = {
 type tProjectsSectionProps = {
   projects: tProject[];
   projectStack: tStack;
+  sectionTitle: string;
 };
 
 type tStyledHeaderLinkProps = {
