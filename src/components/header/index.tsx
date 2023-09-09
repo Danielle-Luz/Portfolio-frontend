@@ -6,7 +6,7 @@ export const Header = () => {
   const routesPaths = [
     { pathName: "/", hyperlinkName: "Home" },
     { pathName: "/projects", hyperlinkName: "Projetos" },
-    { pathName: "/about", hyperlinkName: "Sobre mim" },
+    { pathName: "/about", hyperlinkName: "Sobre" },
     { pathName: "/contact", hyperlinkName: "Contato" },
   ];
 
