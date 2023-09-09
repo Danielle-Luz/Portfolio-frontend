@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { deviceSizes } from "../deviceSizes";
 
 export const StyledProfileCard = styled.article`
   align-items: center;
@@ -6,32 +7,44 @@ export const StyledProfileCard = styled.article`
   border: 2px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
   border-radius: ${({ theme }) => theme.radius.small};
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   justify-content: space-between;
   padding: 30px;
   width: 100%;
-  
+
+  @media (${deviceSizes.laptop}) {
+    flex-direction: row;
+  }
+
   h2 {
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 700;
     margin-bottom: 18px;
   }
-  
+
   p {
     font-size: ${({ theme }) => theme.fontSizes.small};
     font-weight: 600;
-    text-align: justify;
   }
 
   .personal-info {
     align-items: center;
     display: flex;
+    flex-direction: column;
     max-width: 800px;
     gap: 42px;
+    text-align: center;
     width: 100%;
 
     img {
       border-radius: ${({ theme }) => theme.radius.round};
       width: 200px;
+    }
+
+    @media (${deviceSizes.tablet}) {
+      flex-direction: row;
+      text-align: justify;
     }
   }
 
@@ -39,9 +52,20 @@ export const StyledProfileCard = styled.article`
     align-items: center;
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     gap: 18px;
-    max-width: 240px;
     width: 100%;
+    
+    @media (${deviceSizes.tablet}) {
+      flex-direction: row;
+      max-width: none;
+      text-align: justify;
+    }
+    
+    @media (${deviceSizes.laptop}) {
+      flex-direction: column;
+      max-width: 240px;
+    }
 
     a {
       transition: 0.3s;
