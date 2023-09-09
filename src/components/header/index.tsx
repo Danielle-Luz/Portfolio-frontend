@@ -15,7 +15,7 @@ export const Header = () => {
       {routesPaths.map(({ pathName, hyperlinkName }) => {
         const isAccessedRoute = actualLocation.pathname === pathName;
         return (
-          <StyledHeaderLink to={pathName} isAccessedRoute={isAccessedRoute}>
+          <StyledHeaderLink isAccessedRoute={isAccessedRoute} key={pathName} to={pathName}>
             {hyperlinkName}
           </StyledHeaderLink>
         );

@@ -11,7 +11,7 @@ export const ProjectsSection = ({
     <StyledProjectsSection>
       <h2>{sectionTitle}</h2>
       {projects.map((project) => (
-        <Project project={project} projectStack={projectStack} />
+        <Project key={project.id} project={project} projectStack={projectStack} />
       ))}
     </StyledProjectsSection>
   );
