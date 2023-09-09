@@ -32,8 +32,8 @@ export const StyledProfileCard = styled.article`
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 25px;
     max-width: 800px;
-    gap: 42px;
     text-align: center;
     width: 100%;
 
@@ -44,6 +44,7 @@ export const StyledProfileCard = styled.article`
 
     @media (${deviceSizes.tablet}) {
       flex-direction: row;
+      gap: 42px;
       text-align: justify;
     }
   }
@@ -55,13 +56,13 @@ export const StyledProfileCard = styled.article`
     max-width: 400px;
     gap: 18px;
     width: 100%;
-    
+
     @media (${deviceSizes.tablet}) {
       flex-direction: row;
       max-width: none;
       text-align: justify;
     }
-    
+
     @media (${deviceSizes.laptop}) {
       flex-direction: column;
       max-width: 240px;
