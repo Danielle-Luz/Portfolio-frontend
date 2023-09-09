@@ -9,6 +9,7 @@ export const StyledProject = styled.li`
   border: 2px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 425px;
   gap: 25px;
   padding: 25px;
@@ -30,7 +31,7 @@ export const StyledProject = styled.li`
   }
 
   img {
-    height: 170px;
+    height: 150px;
     object-fit: cover;
     max-width: 370px;
     width: 100%;

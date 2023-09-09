@@ -4,7 +4,6 @@ import { StyledProjectsSection } from "../../styles";
 
 export const ProjectsSection = ({
   projects,
-  projectStack,
   sectionTitle,
 }: tProjectsSectionProps) => {
   return (
@@ -15,7 +14,6 @@ export const ProjectsSection = ({
           <Project
             key={project.id}
             project={project}
-            projectStack={projectStack}
           />
         ))}
       </ul>

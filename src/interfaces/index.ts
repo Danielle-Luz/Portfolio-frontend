@@ -19,12 +19,10 @@ type tProject = {
 
 type tProjectProps = {
   project: tProject;
-  projectStack: tStack;
 };
 
 type tProjectsSectionProps = {
   projects: tProject[];
-  projectStack: tStack;
   sectionTitle: string;
 };
 
