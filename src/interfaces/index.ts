@@ -30,6 +30,10 @@ type tParentComponentProps = {
   children: React.ReactNode;
 };
 
+type tStyledAnimatedPageContainerProps = {
+  isTopOrigin: boolean;
+}
+
 type tStyledProjectProps = {
   isBackend: boolean;
 };
@@ -67,6 +71,7 @@ export {
   tProjectProps,
   tProjectsSectionProps,
   tParentComponentProps,
+  tStyledAnimatedPageContainerProps,
   tStyledProjectProps,
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,

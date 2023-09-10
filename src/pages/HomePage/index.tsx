@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import { ProfileCard, ProjectsSection } from "../../components";
+import { Header, ProfileCard, ProjectsSection } from "../../components";
 import { tProject } from "../../interfaces";
 import { ProjectsContext } from "../../providers";
+import { AnimatedPageContainer } from "../../animatedComponents";
 
 export const HomePage = () => {
   const [highlightProjects, setHighlightProjects] = useState([] as tProject[]);
@@ -28,7 +29,8 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <>
+    <AnimatedPageContainer>
+    <Header />
       <ProfileCard />
       <ProjectsSection
         projects={highlightProjects}
@@ -42,6 +44,6 @@ export const HomePage = () => {
         projects={frontendProjects}
         sectionTitle="Front-end projects"
       />
-    </>
+    </AnimatedPageContainer>
   );
 };

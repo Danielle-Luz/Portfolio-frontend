@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
+import { motion } from "framer-motion";
 
-export const StyledProjectsSection = styled.section`
+export const StyledProjectsSection = styled(motion.section)`
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -12,7 +13,6 @@ export const StyledProjectsSection = styled.section`
     font-size: ${({ theme }) => theme.fontSizes.large};
     font-weight: 700;
     margin-bottom: 30px;
-    z-index: 1;
   }
 
   path {

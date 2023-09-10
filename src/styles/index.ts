@@ -1,6 +1,7 @@
 export { customTheme } from "./theme";
 export { GlobalStyles } from "./GlobalStyles";
 export { StyledAnimatedPageContainer } from "./StyledAnimatedPageContainer";
+export { StyledContainer } from "./StyledContainer";
 export { StyledHeader } from "./StyledHeader";
 export { StyledHeaderLink } from "./StyledHeaderLink";
 export { StyledLinkButton } from "./StyledLinkButton";
