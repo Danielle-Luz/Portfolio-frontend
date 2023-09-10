@@ -1,24 +1,29 @@
 import { styled } from "styled-components";
+import { deviceSizes } from "../deviceSizes";
 
 export const StyledTechnologies = styled.ul`
-  display: flex;
+  display: none;
   gap: 10px;
   justify-content: center;
-  width: 100%;
+  width: fit-content;
+
+  @media ${deviceSizes.laptop} {
+    display: flex;
+  }
 
   li {
     align-items: center;
-    background-color: ${({ theme }) => theme.colors.grey.lowOpacity[2]};
-    border: 1px solid ${({ theme }) => theme.colors.grey.lowOpacity[1]};
+    background-color: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.grey.light};
     border-radius: ${({ theme }) => theme.radius.round};
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 
   img {
-    max-width: 35px;
+    max-width: 25px;
     width: 100%;
   }
 `;

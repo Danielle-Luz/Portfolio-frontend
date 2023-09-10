@@ -12,11 +12,12 @@ export const Project = ({ project }: tProjectProps) => {
         <h2>{project.name}</h2>
         <p>{project.description}</p>
       </section>
-      <StyledLinkButton variant="outline" href={project.url}>
-        Repositório
-      </StyledLinkButton>
-      {isBackend && <Technologies technologies={project.technologies} />}
-
+      <div>
+        <StyledLinkButton variant="outline" href={project.url}>
+          Repositório
+        </StyledLinkButton>
+        <Technologies technologies={project.technologies} />
+      </div>
     </StyledProject>
   );
 };

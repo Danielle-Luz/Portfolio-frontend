@@ -11,7 +11,7 @@ export const ProjectsSection = ({
     <StyledProjectsSection>
       <h2 className="section-title">{sectionTitle}</h2>
       <Carousel
-        height={380}
+        height={430}
         slideSize="33.333333%"
         slideGap="lg"
         loop

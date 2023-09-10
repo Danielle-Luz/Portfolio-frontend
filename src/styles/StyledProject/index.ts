@@ -20,6 +20,12 @@ export const StyledProject = styled(Carousel.Slide)<tStyledProjectProps>`
   margin-right: 20px;
   width: 100%;
 
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
   h2 {
     font-size: ${({ theme }) => theme.fontSizes.medium};
     margin-bottom: 10px;
