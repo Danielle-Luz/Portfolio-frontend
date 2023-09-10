@@ -1,4 +1,4 @@
-import { StyledButton, StyledProfileCard } from "../../styles";
+import { StyledLinkButton, StyledProfileCard } from "../../styles";
 import photo from "../../assets/imgs/danielle-photo.jpg";
 
 export const ProfileCard = () => {
@@ -21,8 +21,8 @@ export const ProfileCard = () => {
         </section>
       </article>
       <article className="buttons-section">
-        <StyledButton variant="faint">Artigos</StyledButton>
-        <StyledButton variant="faint">Currículo</StyledButton>
+        <StyledLinkButton variant="faint">Artigos</StyledLinkButton>
+        <StyledLinkButton variant="faint">Currículo</StyledLinkButton>
         <div>
           <a href="https://github.com/Danielle-Luz">
             <img

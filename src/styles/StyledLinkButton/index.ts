@@ -1,10 +1,12 @@
 import { styled } from "styled-components";
-import { tStyledButtonProps } from "../interfaces";
-import { customTheme } from "./theme";
+import { tStyledLinkButtonProps } from "../../interfaces";
+import { customTheme } from "../theme";
 
 const variantsStyles = {
   outline: `
     border: 1px solid ${customTheme.colors.grey.light};
+    padding: 5px 15px;
+    width: fit-content;
 
     &:hover {
       background-color: ${customTheme.colors.grey.lowOpacity[2]};
@@ -24,9 +26,9 @@ const variantsStyles = {
   `,
 };
 
-export const StyledButton = styled.button<tStyledButtonProps>`
-  border-radius: ${({theme}) => theme.radius.small};
-  font-size: ${({theme}) => theme.fontSizes.small};
+export const StyledLinkButton = styled.a<tStyledLinkButtonProps>`
+  border-radius: ${({ theme }) => theme.radius.small};
+  font-size: ${({ theme }) => theme.fontSizes.small};
   transition: 0.2s;
   ${({ variant }) => variantsStyles[variant]}
 `;

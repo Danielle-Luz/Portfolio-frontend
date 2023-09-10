@@ -3,7 +3,7 @@ const customTheme = {
   fontSizes: {
     small: "16px",
     medium: "18px",
-    large: "30px",
+    large: "25px",
   },
   colors: {
     grey: {
