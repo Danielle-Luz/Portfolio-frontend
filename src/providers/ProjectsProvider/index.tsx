@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { tProject, tProviderProps, tStack } from "../../interfaces";
+import { tProject, tParentComponentProps, tStack } from "../../interfaces";
 import { api } from "../../api";
 
 type tProjectsContextProvider = {
@@ -11,7 +11,7 @@ type tProjectsContextProvider = {
 
 const ProjectsContext = createContext({} as tProjectsContextProvider);
 
-const ProjectsProvider = ({ children }: tProviderProps) => {
+const ProjectsProvider = ({ children }: tParentComponentProps) => {
   const [isLoading, setLoading] = useState(false);
   const [hasError, setError] = useState(false);
 

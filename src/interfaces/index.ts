@@ -26,7 +26,7 @@ type tProjectsSectionProps = {
   sectionTitle: string;
 };
 
-type tProviderProps = {
+type tParentComponentProps = {
   children: React.ReactNode;
 };
 
@@ -66,7 +66,7 @@ export {
   tProject,
   tProjectProps,
   tProjectsSectionProps,
-  tProviderProps,
+  tParentComponentProps,
   tStyledProjectProps,
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,

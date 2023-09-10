@@ -1,12 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "./components";
-import { GlobalStyles, StyledContainer, customTheme } from "./styles";
+import { GlobalStyles, customTheme } from "./styles";
 import { ThemeProvider } from "styled-components";
 import { RoutesContainer } from "./routes";
 import { MantineProvider } from "@mantine/core";
 import { ProjectsContext, ProjectsProvider } from "./providers";
 import { useContext } from "react";
 import { WaitingPage } from "./pages/WaitingPage";
+import { AnimatedPageContainer } from "./animatedComponents/AnimatedPageContainer";
 
 const App = () => {
   const { hasError, isLoading } = useContext(ProjectsContext);
@@ -22,10 +23,10 @@ const App = () => {
                 <WaitingPage hasError isLoading />
               ) : (
                 <>
-                  <StyledContainer>
+                  <AnimatedPageContainer>
                     <Header />
                     <RoutesContainer />
-                  </StyledContainer>
+                  </AnimatedPageContainer>
                 </>
               )}
             </ProjectsProvider>
