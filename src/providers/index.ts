@@ -1,1 +1,1 @@
-export { ProjectsProvider } from "./ProjectsProvider";
+export { ProjectsProvider, ProjectsContext } from "./ProjectsProvider";

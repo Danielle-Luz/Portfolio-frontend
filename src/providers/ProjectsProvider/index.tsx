@@ -31,7 +31,7 @@ const ProjectsProvider = ({ children }: tProviderProps) => {
 
   return (
     <ProjectsContext.Provider value={{ getHighlights, getProjectsByStack }}>
-      <Outlet />
+      {children}
     </ProjectsContext.Provider>
   );
 };
