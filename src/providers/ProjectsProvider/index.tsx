@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { Outlet } from "react-router";
-import { tProject, tStack } from "../../interfaces";
+import { tProject, tProviderProps, tStack } from "../../interfaces";
 import { api } from "../../api";
 
 type tProjectsContextProvider = {
@@ -10,7 +10,7 @@ type tProjectsContextProvider = {
 
 const ProjectsContext = createContext({} as tProjectsContextProvider);
 
-export const ProjectsProvider = () => {
+export const ProjectsProvider = ({ children }: tProviderProps) => {
   const getProjectsByStack = async (stack: tStack) => {
     try {
       const { data: projects } = await api.get(`/projects/stack/${stack}`);

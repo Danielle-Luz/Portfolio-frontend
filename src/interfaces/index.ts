@@ -26,6 +26,10 @@ type tProjectsSectionProps = {
   sectionTitle: string;
 };
 
+type tProviderProps = {
+  children: React.ReactNode;
+};
+
 type tStyledProjectProps = {
   isBackend: boolean;
 };
@@ -57,6 +61,7 @@ export {
   tProject,
   tProjectProps,
   tProjectsSectionProps,
+  tProviderProps,
   tStyledProjectProps,
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,

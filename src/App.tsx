@@ -4,6 +4,7 @@ import { GlobalStyles, StyledContainer, customTheme } from "./styles";
 import { ThemeProvider } from "styled-components";
 import { RoutesContainer } from "./routes";
 import { MantineProvider } from "@mantine/core";
+import { ProjectsProvider } from "./providers";
 
 function App() {
   return (
@@ -11,11 +12,13 @@ function App() {
       <BrowserRouter>
         <MantineProvider>
           <ThemeProvider theme={customTheme}>
-            <GlobalStyles />
-            <StyledContainer>
-              <Header />
-              <RoutesContainer />
-            </StyledContainer>
+            <ProjectsProvider>
+              <GlobalStyles />
+              <StyledContainer>
+                <Header />
+                <RoutesContainer />
+              </StyledContainer>
+            </ProjectsProvider>
           </ThemeProvider>
         </MantineProvider>
       </BrowserRouter>
