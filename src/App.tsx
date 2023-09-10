@@ -6,7 +6,6 @@ import { RoutesContainer } from "./routes";
 import { MantineProvider } from "@mantine/core";
 import { ProjectsContext, ProjectsProvider } from "./providers";
 import { useContext } from "react";
-import { Loader } from "@mantine/core";
 import { LoadingIcon } from "./components/LoadingIcon";
 
 const App = () => {
