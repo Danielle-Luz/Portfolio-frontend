@@ -4,7 +4,8 @@ const sizes = {
   mobileLarge: "425px",
   tabletSmall: "530px",
   tablet: "768px",
-  laptop: "1024px",
+  laptopSmall: "1024px",
+  laptopMedium: "1160px",
   laptopLarge: "1440px",
   desktop: "2560px",
 };
@@ -15,7 +16,8 @@ export const deviceSizes = {
   mobileLarge: `(min-width: ${sizes.mobileLarge})`,
   tabletSmall: `(min-width: ${sizes.tabletSmall})`,
   tablet: `(min-width: ${sizes.tablet})`,
-  laptop: `(min-width: ${sizes.laptop})`,
+  laptopSmall: `(min-width: ${sizes.laptopSmall})`,
+  laptopMedium: `(min-width: ${sizes.laptopMedium})`,
   laptopLarge: `(min-width: ${sizes.laptopLarge})`,
   desktop: `(min-width: ${sizes.desktop})`,
 };

@@ -7,7 +7,7 @@ export const StyledTechnologies = styled.ul`
   justify-content: center;
   width: fit-content;
 
-  @media ${deviceSizes.laptop} {
+  @media ${deviceSizes.laptopMedium} {
     display: flex;
   }
 

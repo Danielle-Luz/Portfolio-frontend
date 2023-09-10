@@ -14,7 +14,7 @@ export const StyledProfileCard = styled.article`
   width: 100%;
   z-index: 1;
 
-  @media (${deviceSizes.laptop}) {
+  @media (${deviceSizes.laptopSmall}) {
     flex-direction: row;
   }
 
@@ -64,7 +64,7 @@ export const StyledProfileCard = styled.article`
       text-align: justify;
     }
 
-    @media (${deviceSizes.laptop}) {
+    @media (${deviceSizes.laptopSmall}) {
       flex-direction: column;
       max-width: 240px;
     }
