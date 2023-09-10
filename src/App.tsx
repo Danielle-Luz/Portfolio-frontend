@@ -6,10 +6,10 @@ import { RoutesContainer } from "./routes";
 import { MantineProvider } from "@mantine/core";
 import { ProjectsContext, ProjectsProvider } from "./providers";
 import { useContext } from "react";
-import { LoadingIcon } from "./components/LoadingIcon";
+import { WaitingPage } from "./pages/WaitingPage";
 
 const App = () => {
-  const { isLoading } = useContext(ProjectsContext);
+  const { hasError, isLoading } = useContext(ProjectsContext);
 
   return (
     <>
@@ -18,8 +18,8 @@ const App = () => {
           <ThemeProvider theme={customTheme}>
             <ProjectsProvider>
               <GlobalStyles />
-              {isLoading ? (
-                <LoadingIcon />
+              {hasError || isLoading ? (
+                <WaitingPage hasError isLoading />
               ) : (
                 <>
                   <StyledContainer>

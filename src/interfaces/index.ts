@@ -54,6 +54,11 @@ type tTechnologiesProps = {
   technologies: tTechnology[];
 };
 
+type tWaitingPageProps = {
+  hasError: boolean;
+  isLoading: boolean;
+};
+
 export {
   tCustomTheme,
   tKnowledgeLevel,
@@ -67,4 +72,5 @@ export {
   tStyledLinkButtonProps,
   tTechnology,
   tTechnologiesProps,
+  tWaitingPageProps,
 };

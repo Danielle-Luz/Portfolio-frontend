@@ -3,6 +3,7 @@ import { tProject, tProviderProps, tStack } from "../../interfaces";
 import { api } from "../../api";
 
 type tProjectsContextProvider = {
+  hasError: boolean;
   isLoading: boolean;
   getHighlights: () => Promise<tProject[] | undefined>;
   getProjectsByStack: (stack: tStack) => Promise<tProject[] | undefined>;
@@ -12,6 +13,7 @@ const ProjectsContext = createContext({} as tProjectsContextProvider);
 
 const ProjectsProvider = ({ children }: tProviderProps) => {
   const [isLoading, setLoading] = useState(false);
+  const [hasError, setError] = useState(false);
 
   const getProjectsByStack = async (stack: tStack) => {
     setLoading(true);
@@ -19,7 +21,7 @@ const ProjectsProvider = ({ children }: tProviderProps) => {
       const { data: projects } = await api.get(`/projects/stack/${stack}`);
       return projects as tProject[];
     } catch (error) {
-      console.error(error);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -31,7 +33,7 @@ const ProjectsProvider = ({ children }: tProviderProps) => {
       const { data: highlightProjects } = await api.get("/projects/highlights");
       return highlightProjects as tProject[];
     } catch (error) {
-      console.error(error);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -39,7 +41,7 @@ const ProjectsProvider = ({ children }: tProviderProps) => {
 
   return (
     <ProjectsContext.Provider
-      value={{ isLoading, getHighlights, getProjectsByStack }}
+      value={{ hasError, isLoading, getHighlights, getProjectsByStack }}
     >
       {children}
     </ProjectsContext.Provider>
