@@ -1,3 +1,4 @@
+import { Loader } from "@mantine/core";
 import { useContext, useEffect, useState } from "react";
 import { ProfileCard, ProjectsSection } from "../../components";
 import { tProject } from "../../interfaces";
