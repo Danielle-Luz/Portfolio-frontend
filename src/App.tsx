@@ -4,23 +4,36 @@ import { GlobalStyles, StyledContainer, customTheme } from "./styles";
 import { ThemeProvider } from "styled-components";
 import { RoutesContainer } from "./routes";
 import { MantineProvider } from "@mantine/core";
+import { ProjectsContext, ProjectsProvider } from "./providers";
+import { useContext } from "react";
+import { WaitingPage } from "./pages/WaitingPage";
 
-function App() {
+const App = () => {
+  const { hasError, isLoading } = useContext(ProjectsContext);
+
   return (
     <>
       <BrowserRouter>
         <MantineProvider>
           <ThemeProvider theme={customTheme}>
-            <GlobalStyles />
-            <StyledContainer>
-              <Header />
-              <RoutesContainer />
-            </StyledContainer>
+            <ProjectsProvider>
+              <GlobalStyles />
+              {hasError || isLoading ? (
+                <WaitingPage hasError isLoading />
+              ) : (
+                <>
+                  <StyledContainer>
+                    <Header />
+                    <RoutesContainer />
+                  </StyledContainer>
+                </>
+              )}
+            </ProjectsProvider>
           </ThemeProvider>
         </MantineProvider>
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;

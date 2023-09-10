@@ -26,6 +26,10 @@ type tProjectsSectionProps = {
   sectionTitle: string;
 };
 
+type tProviderProps = {
+  children: React.ReactNode;
+};
+
 type tStyledProjectProps = {
   isBackend: boolean;
 };
@@ -50,6 +54,11 @@ type tTechnologiesProps = {
   technologies: tTechnology[];
 };
 
+type tWaitingPageProps = {
+  hasError: boolean;
+  isLoading: boolean;
+};
+
 export {
   tCustomTheme,
   tKnowledgeLevel,
@@ -57,9 +66,11 @@ export {
   tProject,
   tProjectProps,
   tProjectsSectionProps,
+  tProviderProps,
   tStyledProjectProps,
   tStyledHeaderLinkProps,
   tStyledLinkButtonProps,
   tTechnology,
   tTechnologiesProps,
+  tWaitingPageProps,
 };
