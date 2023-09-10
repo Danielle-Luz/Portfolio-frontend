@@ -1,10 +1,10 @@
 import { StyledLoadingIcon } from "../../styles";
-import loading from "../../assets/imgs/loading-icon.gif";
+import { Loader } from "@mantine/core";
 
 export const LoadingIcon = () => {
   return (
     <StyledLoadingIcon>
-      <img src={loading} alt="loading icon" />
+      <Loader color="gray" size="xl" />
     </StyledLoadingIcon>
   );
 }
