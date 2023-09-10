@@ -19,7 +19,7 @@ const App = () => {
           <ThemeProvider theme={customTheme}>
             <ProjectsProvider>
               <GlobalStyles />
-              {true ? (
+              {isLoading ? (
                 <LoadingIcon />
               ) : (
                 <>
