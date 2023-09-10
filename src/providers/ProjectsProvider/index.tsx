@@ -10,7 +10,7 @@ type tProjectsContextProvider = {
 
 const ProjectsContext = createContext({} as tProjectsContextProvider);
 
-export const ProjectsProvider = ({ children }: tProviderProps) => {
+const ProjectsProvider = ({ children }: tProviderProps) => {
   const getProjectsByStack = async (stack: tStack) => {
     try {
       const { data: projects } = await api.get(`/projects/stack/${stack}`);
@@ -35,3 +35,5 @@ export const ProjectsProvider = ({ children }: tProviderProps) => {
     </ProjectsContext.Provider>
   );
 };
+
+export { ProjectsProvider, ProjectsContext };
