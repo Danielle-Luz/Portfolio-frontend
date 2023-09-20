@@ -1,7 +1,7 @@
 import { tProjectsSectionProps } from "./../../interfaces";
 import { Project } from "..";
 import { Carousel } from "@mantine/carousel";
-import { AnimatedProjectsSection } from "../../animatedComponents/AnimatedProjectsSection";
+import { AnimatedProjectsSection } from "../../animatedComponents";
 
 export const ProjectsSection = ({
   projects,
